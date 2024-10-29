@@ -1,0 +1,25 @@
+body {
+    position: relative;
+}
+header {
+    background-color: yellowgreen;
+}
+header p {
+    background-color: cadetblue;
+    position: relative;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid red;
+}
+.absolute {
+    background-color: rgba(165, 42, 42, 0.5);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.fixed {
+    background-color: rgba(56, 165, 42, 0.5);
+    position: fixed;
+    right: 0;
+    bottom: 0; 
+}
