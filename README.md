@@ -8,7 +8,7 @@ Learning resources:
 - [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
 ## Git Basics
-You can read more [here](00-lesson-git/readme.md)
+You can read more [here](https://github.com/sherlockmac/frontend_class/tree/00-lesson-git)
 
 ## CSS
-Let's start with positioning. You can start [here](01-lesson-css-position/readme.md)
+Let's start with positioning. You can start [here](https://github.com/sherlockmac/frontend_class/tree/01-lesson-css-position)
