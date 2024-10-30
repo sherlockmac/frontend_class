@@ -1,4 +1,4 @@
-# Git
+i opend a readme.md on my vs and I wanna see a preview from it# Git
 This an overview for git. You can come here for reference.
 
 ## How to get it
@@ -113,9 +113,52 @@ git clone [remote_url]
 If you want git to ignore tracking a folder or a file you can add them to the ```.gitignore``` file. This is usually the ```.env``` file.
 ### Undo changes
 ```bash
-git revert
+git revert [commit-hash]
 ```
-By default it will revert to last commit but you can use the commit to revert to.
+This will create a new commit that undoes the changes from the specified commit.
 ```bash
 git reset
 ```
+
+## sajad update 
+### adding a repostory with all branches 
+i found two ways work doing this : 
+### 1- mirror
+```bash
+git clone --mirror [remote address] 
+``` 
+buy using this  you can create a clone fron your repository .
+> this method creats a bare repository withoud active tree and **you can not change the branch files**
+
+### 2- clone and fetch
+this method has 4 steps to clone a repository with all branches:
+
+### Clone the Repository (without --mirror):
+```bash
+git clone [address github]
+
+cd [repository-name]
+```
+### Fetch All Branches:
+The ```git clone command``` already pulls down all branches, but they may not be set up as local branches. To see all branches and set up local tracking branches for each, you can use:
+```bash 
+git fetch --all 
+```
+### Set Up Local Branches for Each Remote Branch:
+To check out all branches locally, you can run:
+
+
+```bash 
+for branch in $(git branch -r | grep -v '\->'); do
+    git branch --track "${branch##origin/}" "$branch" || true;
+done
+```
+
+
+
+
+
+
+
+
+
